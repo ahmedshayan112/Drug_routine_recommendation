@@ -155,7 +155,7 @@ async def recommend(request: RecommendationRequest):
         {
             "$set": {
                 "patientId": patient_id,
-                "suspected_conditions": suspected_conditions,
+                "suspectedConditions": suspected_conditions,
                 "recommendation": recommendation,
                 "updatedAt": now,
             },
@@ -172,7 +172,7 @@ async def recommend(request: RecommendationRequest):
         "status": "success",
         "action": action,
         "patientId": patient_id,
-        "suspected_conditions": suspected_conditions,
+        "suspectedConditions": suspected_conditions,
         "recommendation": recommendation,
     }
 
